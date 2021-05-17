@@ -82,7 +82,21 @@
     justify-content: center;
 
 }
-.secondHalf{
+.text-big{
+    font-size: 30px;
+}
+.text-small{
+    font-size: 20px
+}
+.btn:hover{
+    font-size: 20px;
+    margin:auto;
+    color:rgb(214, 188, 183);
+    background:rgb(29, 28, 26);
+    box-shadow: 0 0 10px #e498c4, 0 0 40px #e498c4, 0 0 80px #e498c4 ;
+    transition-delay: 0.4s;
+}
+/* .secondHalf{
 width: 3%;
 margin: auto;
 display: block;
@@ -93,4 +107,4 @@ border-radius: 150px;
     width: 400px;
     /* display: inline-block; */
     margin: auto;
-}
+} */
