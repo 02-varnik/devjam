@@ -28,14 +28,15 @@
     <section class="backgrounds firstSection">
         <div class="box-main">
             <div class="firstHalf">
-                <p class="text-big">Want to cast spell on your guests with memorable events? <br>If yes, then You are at the right place!!</p>
+            <p class="text-big">Event it-plan your memories</p>
+                <p class="text-small">Want to cast spell on your guests with memorable events? <br>If yes, then You are at the right place!! <br></p>
                 <div class="buttons">
                     <button class="btn">Log In/Sign Up</button>
                 </div>
             </div>
-            <div class="secondHalf">
+            <!-- <div class="secondHalf">
                 <img src="images/11.png" alt="img">
-            </div>
+            </div> -->
         </div>
     </section>
 </body>
