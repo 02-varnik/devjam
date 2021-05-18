@@ -31,7 +31,8 @@
             <p class="text-big">Event it-plan your memories</p>
                 <p class="text-small">Want to cast spell on your guests with memorable events? <br>If yes, then You are at the right place!! <br> <br></p>
                 <div class="buttons">
-                    <button class="btn">Log In/Sign Up</button>
+                    <button class="btn"><a href="get-started.html" target="_blank" style="text-decoration: none; color: rgb(128 98 92);">Get Started</a></button>
+                    <button class="btn"><a href="partner-up.html" target="_blank style=" style="text-decoration: none; color: rgb(128 98 92);">Partner-Up</a></button>
                 </div>
             </div>
         </div>
