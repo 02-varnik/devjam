@@ -25,7 +25,7 @@
                 <button class="btn btnsm">Search</button>
             </div>
     </nav>
-    <section class="backgrounds firstSection">
+    <section class="backgrounds firstSection" id="home">
         <div class="box-main">
             <div class="firstHalf">
             <p class="text-big">Event it-plan your memories</p>
