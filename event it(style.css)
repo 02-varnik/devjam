@@ -43,7 +43,10 @@
     text-decoration: none;
     }
 .nav-list li a:hover{
-    color: grey;
+    color: rgb(202, 134, 134);;
+}
+.nav-list li a:active{
+    color: rgb(202, 134, 134);
 }
 .rightNav{
     
