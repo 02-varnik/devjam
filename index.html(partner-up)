@@ -93,5 +93,11 @@ class="close" title="Close Modal">&times;</span>
             
         </div>
     </section>
+     <footer class="backgrounds">
+        <p class="text-footer">
+          Copyright &copy; 2021- All rights reserved
+
+        </p>
+    </footer>
 </body>
 </html>
