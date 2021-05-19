@@ -13,7 +13,7 @@
 
 }
 .logo img{
-    width: 50%;
+    width: 45%;
     padding-top: 5px;
     border-radius: 85px;
 }
@@ -27,7 +27,7 @@
 }
 .nav-list{
     
-    width: 50%;
+    width: 70%;
     display: flex;
     align-items: center;
     
@@ -51,15 +51,10 @@
 .rightNav{
     
     text-align: right;
-    width: 50%;
+    width: 30%;
     
     }
-#search{
-    padding: 5px;
-    font-size:17px;
 
-
-}
 .background{
     background: #e2e8eb9e;
 }
