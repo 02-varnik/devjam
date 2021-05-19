@@ -213,3 +213,9 @@ box-sizing: border-box;
     height: 31vh; 
     padding: 65px;
 }
+.text-footer{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
