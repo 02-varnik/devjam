@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="images/logo4.jpeg" alt="logo">
+                
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+            <div class="rightNav">
+                <input type="text" name="search" id="search">
+                <button class="btn btnsm">Search</button>
+            </div>
+    </nav>
+    <section class=" backgrounds firstSection " >
+        <br> <br> <br> <br> <br>
+    <div class="container">
+        <br>
+        <h4>Check the box that applies to you : </h4>
+        <br>
+        <form action="backend.php" onsubmit="displayMsg()" id="myForm">
+            <!-- checkbox  -->
+        <div>
+            <label for="caterer">Caterer  </label>
+         <input type="checkbox" name="myCaterer" id="caterer">
+            <label for="venue"> &nbsp; Venues</label>
+         <input type="checkbox" name="myVenue" id="venue">
+         
+        </div>
+        <br>
+        <div>
+            <label for="name">Venue's Name </label><br>
+           <input type="text" name="myname" id="name" placeholder="Enter venue's name" required>
+         
+        </div>
+        <br>
+        <div>
+            <label for="address">Address </label><br>
+           <input type="text" name="myadress" id="address" placeholder="Enter venue's address" required>
+         
+        </div>
+        <br>
+        <div>
+            <label for="contact">Contact </label><br>
+          <input type="text" name="myContact" id="contact" placeholder="Enter your contact no." required>
+        </div>
+        <br>
+        <div>
+            <label for="capacity">Capacity </label><br>
+          <input type="text" name="Capacity" id="capacity" placeholder="Enter the capacity of your service" required>
+        </div>
+        <br>
+        <div>
+            <label for="ratings">Ratings</label><br>
+          1 <input type="radio" name="myRatings">&nbsp; 2 <input type="radio" name="myRatings">&nbsp; 3 <input type="radio" name="myRatings">&nbsp; 4 <input type="radio" name="myRatings"> 5 <input type="radio" name="myRatings">
+        </div>
+       
+        <br>    
+        <br>
+        <div>
+          <input type="submit" value="Submit " class="btn1">
+          <input type="reset" value="Reset" class="btn2">
+        </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("myForm").onsubmit = function() {displayMsg()};
+        
+        function displayMsg() {
+          alert("Thank you!! We would be physically verifying your location shortly.");
+        }
+    </script>
+    
+    </section>
+    
+</body>
+</html>
