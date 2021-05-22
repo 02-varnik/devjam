@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Partner-Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar background h-nav-resp " >
+        <ul class="nav-list v-class-resp" id="nav">
+            <div class="logo">
+                <img src="images/logo4.jpeg" alt="logo">
+                
+            </div>
+            
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+            <div class="rightNav ">
+                
+                <input name="search " class="search v-class-resp" type="text" id="keywords" size="30"  onkeypress="handleKeyPress(event)" placeholder="Search">
+                <button id="search-button" type="button" class=" btn-primary v-class-resp">
+                  <i class="fa fa-search v-class-resp"></i>
+                </button>
+               
+                <button class="btn btnsm btnlog v-class-resp" ><a href="login.html" style="text-decoration: none; color: rgb(128 98 92);">Log in </a></button>
+            </div>
+            <div class="burger" >
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              
+            </div>
+            
+    </nav>
+    <section class=" backgrounds firstSection " >
+        <br> <br> <br> <br> <br>
+    <div class="container">
+        <br>
+        <h4>Collaboration Category : </h4>
+        <br>
+        <form action="backend.php" onsubmit="displayMsg()" id="myForm">
+            <!-- checkbox  -->
+        <div>
+            <label for="caterer">Caterer  </label>
+         <input type="checkbox" name="myCaterer" id="caterer">
+            <label for="venue"> &nbsp; Venues</label>
+         <input type="checkbox" name="myVenue" id="venue">
+         
+        </div>
+        <br>
+        <div>
+            <label for="name">Venue's Name </label><br>
+           <input type="text" name="myname" id="name" placeholder="Enter venue's name" required>
+         
+        </div>
+        <br>
+        <div>
+            <label for="address">Address </label><br>
+           <input type="text" name="myadress" id="address" placeholder="Enter venue's address" required>
+         
+        </div>
+        <br>
+        <div>
+            <label for="contact">Contact </label><br>
+          <input type="text" name="myContact" id="contact" placeholder="Enter your contact no." required>
+        </div>
+        <br>
+        <div>
+            <label for="capacity">Capacity </label><br>
+          <input type="text" name="Capacity" id="capacity" placeholder="Enter the capacity of your service" required>
+        </div>
+        <br>
+        <div>
+            <label for="ratings">Ratings</label><br>
+          1 <input type="radio" name="myRatings">&nbsp; 2 <input type="radio" name="myRatings">&nbsp; 3 <input type="radio" name="myRatings">&nbsp; 4 <input type="radio" name="myRatings"> 5 <input type="radio" name="myRatings">
+        </div>
+       
+        <br>    
+        <br>
+        <div>
+          <input type="submit" value="Submit " class="btn1">
+          <input type="reset" value="Reset" class="btn2">
+        </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById("myForm").onsubmit = function() {displayMsg()};
+        
+        function displayMsg() {
+          alert("Thank you!! We would be physically verifying your location shortly.");
+        }
+    </script>
+    
+    </section>
+    <script src="resp.js"></script>
+    
+</body>
+</html>
