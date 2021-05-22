@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Event it-plan your memories</title>
+    <script>
+      function handleKeyPress(e){
+ var key=e.keyCode || e.which;
+  if (key==13){
+     searching();
+  }
+}
+    </script>
+</head>
+<body>
+    <nav class="navbar background h-nav-resp " >
+        <ul class="nav-list v-class-resp" id="nav">
+            <div class="logo">
+                <img src="images/logo4.jpeg" alt="logo">
+                
+            </div>
+            
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+            <div class="rightNav ">
+                
+                <input name="search " class="search v-class-resp" type="text" id="keywords" size="30"  onkeypress="handleKeyPress(event)" placeholder="Search">
+                <button id="search-button" type="button" class=" btn-primary v-class-resp">
+                  <i class="fa fa-search v-class-resp"></i>
+                </button>
+               
+                <button class="btn btnsm btnlog v-class-resp" ><a href="login.html" style="text-decoration: none; color: rgb(128 98 92);">Log in </a></button>
+            </div>
+            <div class="burger" >
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+              
+            </div>
+            
+    </nav>
+    <section class=" backgrounds firstSection " >
+        <br> <br> <br> <br> <br>
+        <h3 style="justify-content: center; text-align: center; font-family: 'Times New Roman', Times, serif;"> HELP US KNOW YOU MORE! </h3> <br>
+    <div class="container-info">
+        <br>
+       
+        <br>
+        <form action="backend.php" onsubmit="displayMsg()" id="myForm">
+            <!-- checkbox  -->
+            <br>
+        <div>
+            <label for="name-user">Name </label> <br>
+         <input type="text" name="myname-user" id="name-user" placeholder="Enter your name" required> <br>
+         </div>
+         <br>
+         <div>
+            <label for="contact-user"> &nbsp; Contact</label> <br>
+         <input type="text" name="mycontact-user" id="contact-user" placeholder="Enter your contact"><br>
+         
+        </div>
+        <br>
+        <div>
+            <label for="city-user">City </label> <br>
+           <input type="text" name="mycity" id="city-user" placeholder="Enter your city" required>
+         
+        </div>
+        <br>
+        <div>
+            <label for="number">Number of invitees </label> <br>
+           <input type="text" name="mynumber" id="number" placeholder="Enter the number of invitees" required>
+         
+        </div>
+        <br>
+        <div>
+            <label for="venue">Venue </label><br>
+          <select name="venue" id="venue" required>
+              <option value="hotel">Hotel</option>
+              <option value="farmhouse">Farmhouse</option>
+              <option value="garden">Garden</option>
+              <option value="beach">Beach</option>
+              <option value="ballroom">Ballroom</option>
+              <option value="others">Others</option>
+          </select>
+         
+        </div>
+        <br>
+        <div>
+            <label for="event">Event </label><br>
+          <select name="Event" id="event" required>
+              <option value="birtthay">Birthday party</option>
+              <option value="wedding" selected>Wedding</option>
+              <option value="corporate">Corporate event</option>
+              <option value="anniversary">Anniversary</option>              
+              <option value="seminars">Seminars</option>
+              <option value="exhibitions">Exhibitions</option> 
+              <option value="bachelor">Bachelor/Bachelorette party</option>
+              <option value="festival">Festival</option>
+              <option value="others">Others</option>
+          </select>
+         
+        </div>
+        <br>
+        <div>
+            <ul class="info">
+          <li>  <label for="start-date"> Start date </label><br>
+           <input type="date" name="start-date" id="start-date" required> <br> </li>
+        
+           <li> <label for="start-time"> Start time </label><br>
+           <input type="time" name="start-time" id="start-time" required> </li>
+           <br> <br>
+           <li> <label for="end-date"> End date </label><br>
+           <input type="date" name="end-date" id="end-date" required> </li>
+           <li> <label for="end-time"> End date </label><br>
+           <input type="time" name="end-time" id="end-time" required></li>
+        </ul>
+        </div>
+        <br> 
+         
+        <br>
+        <div>
+          <input type="submit" value="Submit " class="btn1">
+          <input type="reset" value="Reset" class="btn2">
+          <a href="index.html">
+          <input type="explore" value="Explore" class="btn2">
+          </a>
+        </div>
+        <br>
+        <h4>We are at your disposal for any further information you may need.</h4>
+        </form>
+    </div>
+    <script>
+        document.getElementById("myForm").onsubmit = function() {displayMsg()};
+        
+        function displayMsg() {
+          alert("Thank you for connecting with us!! We aim at planning your memories.");
+        }
+    </script>
+    
+    </section>
+   
+    <script src="resp.js"></script>
+</body>
+</html>
